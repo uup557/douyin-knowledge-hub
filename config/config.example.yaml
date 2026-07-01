@@ -1,0 +1,85 @@
+# Douyin Knowledge Hub Configuration
+
+# 抖音配置
+douyin:
+  # 抖音 Cookie（从浏览器获取）
+  cookie: "your_cookie_here"
+  
+  # 监控的小号抖音ID
+  target_account: "your_target_account"
+  
+  # 检查间隔（秒），默认 1 小时
+  check_interval: 3600
+  
+  # 最大重试次数
+  max_retries: 3
+  
+  # 请求超时（秒）
+  timeout: 30
+
+# AI 分析配置
+ai:
+  # AI 提供商: mimo, openai, anthropic
+  provider: "mimo"
+  
+  # API 密钥
+  api_key: "your_api_key_here"
+  
+  # 模型名称
+  model: "mimo-v2.5"
+  
+  # 最大 token 数
+  max_tokens: 1000
+  
+  # 温度参数
+  temperature: 0.7
+
+# 数据库配置
+database:
+  # 数据库路径
+  path: "data/knowledge.db"
+  
+  # 备份间隔（秒），默认 1 天
+  backup_interval: 86400
+  
+  # 最大备份数
+  max_backups: 7
+
+# 日志配置
+logging:
+  # 日志级别: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+  
+  # 日志文件路径
+  file: "logs/app.log"
+  
+  # 日志轮转大小
+  rotation: "10 MB"
+  
+  # 日志保留时间
+  retention: "30 days"
+
+# API 配置
+api:
+  # API 监听地址
+  host: "0.0.0.0"
+  
+  # API 监听端口
+  port: 8000
+  
+  # 是否开启调试模式
+  debug: false
+
+# 监控配置
+monitor:
+  # 是否启用监控
+  enabled: true
+  
+  # 监控间隔（秒）
+  interval: 60
+  
+  # 性能阈值
+  thresholds:
+    cpu_percent: 80
+    memory_percent: 80
+    disk_percent: 90

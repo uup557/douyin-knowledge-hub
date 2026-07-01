@@ -1,0 +1,39 @@
+# Douyin Knowledge Hub - Python Dependencies
+
+# Web Framework
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+
+# HTTP Client
+httpx==0.27.0
+aiohttp==3.9.3
+
+# Database
+aiosqlite==0.19.0
+
+# Configuration
+pyyaml==6.0.1
+python-dotenv==1.0.1
+
+# AI Integration
+openai==1.12.0
+
+# Utilities
+loguru==0.7.2
+pydantic==2.6.1
+pydantic-settings==2.1.0
+
+# Date/Time
+python-dateutil==2.8.2
+
+# Testing
+pytest==8.0.2
+pytest-asyncio==0.23.5
+pytest-cov==4.1.0
+
+# Development
+black==24.2.0
+ruff==0.3.0
+mypy==1.8.0
+pre-commit==3.6.2
